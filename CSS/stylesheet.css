@@ -1,3 +1,23 @@
+@keyframes rotate {
+ to{
+    transform: rotate(360deg);
+ }
+}
+.back{
+    position: absolute;
+    box-shadow:0px 10px 0 #ED0C49 , -10px -10px 0 #9D747F;
+    animation: rotate 4s infinite linear;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    left: 43.5%;
+}
+body{
+    background-color: #42eaddff;
+}
+article {
+    margin-left: 200px;
+}
 img {
     display: block;
     margin-left: auto;
@@ -23,25 +43,70 @@ header {
 margin-top: 8px;
 margin-left: -8px;
 margin-right: -8px;
-padding: 0;
+padding: 5x;
 overflow: hidden;
 background-color: gray;
-text-align: right
+border: 2px solid black;
 }
 #nav{
-    display: inline;
-    margin-right: 240px;
+float: left;
+list-style-type: none;
+
+}
+li a {
+position: relative;
+display: block;
+color: black;
+text-decoration: none;
+margin-right: 200px;
+left: 200px;
+padding: 10px;
 
     
 }
-li a {
-    color: black;
-    text-decoration: none;
-}
 li :hover {
-    color: white;
+    background-color: white;
 }
-/*li :visited {
+li :visited {
     color: #DC81C3;
 }
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+.education{
+    flex: 1;
+    width: 1000px;
+    
+    background-color: #004146;
+    padding: 10px;
+    color: #EFF5F9;
+}
+.projects{
+    flex: 2;
+    width: 1000px;
+    background-color: #004146;
+    padding: 10px;
+    color: #EFF5F9;
+}
+#formgroup {
+    position: relative;
+    height: 70px;
+    width: 150px;
+    background-color: #03BFB5;
+    border: 4px solid white;
+    color: white;
+    padding-bottom: 350px;
+    padding-right: 190px;
+    padding-left: 20px;
+}
 
+.grid-container{
+    position: relative;
+    display: grid;
+    background-color: #004146;
+    grid-template-columns: 300px 200px 200px;
+    padding: 10px;
+    width: 1000px;
+    color: #EFF5F9;
+}

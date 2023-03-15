@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Resume</title>
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="CSS/stylesheet.css"> 
+    
 </head>
+</div>
 <body>
-   <header>
+      
+    <header>
+      <div class="back"></div>
     <picture>
         <source srcset="images\head.jpg" media="(max-width: 425px)">
         <source srcset="images\shoulder.jpg" media="(max-width: 900px)">
@@ -19,11 +23,82 @@
    </header>
    <div class="navbar"> 
    <ul>
-    <li id="nav"><a href="#">Education</a></li>
-    <li id="nav"><a href="#">Marketing Projects</a></li>
-    <li id="nav"><a href="#">Skills</a></li>
+    <li id="nav"><a href="#education">Education</a></li>
+    <li id="nav"><a href="#projects">Marketing-Projects</a></li>
+    <li id="nav"><a href="#skills">Skills</a></li>
     <li id="nav"><a href="#">Contact</a></li>
   </ul>
    </div>
+<article>
+   <section class="flex-container">
+   <div class="education">
+    <h2 id="education">Education</h2>
+          <div class="div2">
+            <h3>  Qualification 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Et ligula ullamcorper malesuada proin
+                libero nunc consequat interdum. Sit amet tellus cras adipiscing enim.</p>
+            <h3>Qualification 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Et ligula ullamcorper malesuada proin
+                libero nunc consequat interdum. Sit amet tellus cras adipiscing enim.</p>
+        </div>
+        <div class="Projects">
+          
+              <h2 id="projects">Marketing-Projects</h2>
+              <div class="div3">
+                <h3>  Project 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Et ligula ullamcorper malesuada proin
+                    libero nunc consequat interdum. Sit amet tellus cras adipiscing enim.</p>
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Et ligula ullamcorper malesuada proin
+                    libero nunc consequat interdum. Sit amet tellus cras adipiscing enim.</p>
+              </div>
+      </div>
+    </section>
+
+    <section class="grid-container">
+      <div class="grid-item item1">
+          <h2 id="skills">Skills</h2>
+            <ul>
+              <li>Skill 1</li>
+              <li>Skill 2</li>
+              <li>Skill 3</li>
+              <li>Skill 4 </li>
+          </ul>
+     </div>
+<div class="grid-item item2">
+          <h2 id="hobbies">Hobbies</h2>
+            <ul>
+              <li>hobby 1</li>
+              <li>hobby 2</li>
+              <li>hobby 3</li>
+              <li>hobby 4 </li>
+          </ul>
+     </div>
+     <div id="formgroup" class="grid-item item3">
+      <form action="https://formsubmit.co/tumisangnke@gmail.com" method="post">
+          <h4>User feedback</h4>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="User_name* required">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="User_email* required">
+          <label for="subjects">Subject:</label>
+          <select name="subjects" id="subjects" required>
+              <option value="helpmehelpyou">Help me Help you</option>
+              <option value="enjoyabetterexperience">Enjoy Better Experience</option>
+              <option value="helpmeimprove">Help me Improve Product</option>
+              <option value="other">Other</option>
+          </select>
+          <textarea name="user-message" id="msg" cols="30" rows="10">User feedback notes:</textarea>
+          <input type="submit">
+      </form>
+  </div>
+    </section>
+</div>
+</article>
 </body>
+</div>
 </html>
