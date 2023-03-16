@@ -10,7 +10,8 @@
     width: 180px;
     height: 180px;
     border-radius:50%;
-    left: 43.5%;
+    left: 44%;
+    
 }
 body{
     background-color: #fa9028;
@@ -43,7 +44,6 @@ header {
     height: 300px;
     margin: -8px;
     background-position-y: 30%;
-    max-width: 100%;
 
 }
 .navbar {
@@ -54,7 +54,6 @@ padding: 5x;
 overflow: hidden;
 background-color: #4D4C4C  ;
 border: 2px solid black;
-width: 100%;
 }
 #nav{
 float: left;
@@ -151,15 +150,26 @@ left: 130px;
 }
 
 footer {
-    margin-top: 100px;
+    margin-top: 80px;
     width: fit-content;
 }
-
+.footer{
+    padding-left: 15%;
+    margin-right: 10PX;
+    padding-right: 15%;
+    margin-left: 150PX;
+}
 /*====================================Mobile================================================*/
 @media screen and (max-width: 420px) {
 .grid-container{
     grid-template-columns: 200px 100px; 
-}   
+}
+.footer{
+    margin-left: 10px;
+} 
+.back{
+    display: none; 
+}  
 }
 
 /*====================================Tablet================================================*/
@@ -167,6 +177,12 @@ footer {
     .grid-container{
         grid-template-columns: 200px 100px; 
     }
+    .footer{
+        margin-left: -50px;
+    } 
+    .back{
+        display: none;
+}
 }
 
     /*====================================Laptop================================================*/
