@@ -14,6 +14,7 @@
 }
 body{
     background-color: #fa9028;
+    box-sizing: border-box;
 }
 article {
     padding-left: 15%;
@@ -157,20 +158,20 @@ footer {
 /*====================================Mobile================================================*/
 @media screen and (max-width: 420px) {
 .grid-container{
-    grid-template-columns: 200px 200px; 
+    grid-template-columns: 200px 100px; 
 }   
 }
 
 /*====================================Tablet================================================*/
 @media screen and (max-width: 768px) {
     .grid-container{
-        grid-template-columns: 200px 200px; 
+        grid-template-columns: 200px 100px; 
     }
 }
 
     /*====================================Laptop================================================*/
 @media screen and (max-width: 1140px) {
     .grid-container{
-        grid-template-columns: 200px 200px; 
+        grid-template-columns: 200px 100px; 
     }
 }
