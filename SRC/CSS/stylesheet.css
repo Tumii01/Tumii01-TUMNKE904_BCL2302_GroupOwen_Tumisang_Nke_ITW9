@@ -44,7 +44,16 @@ header {
     height: 300px;
     margin: -8px;
     background-position-y: 30%;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.git{
+    margin-left: 300px;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navbar {
 margin-top: 8px;
@@ -67,7 +76,8 @@ color: black;
 text-decoration: none;
 margin-right: 200px;
 left: 200px;
-padding: 10px;  
+padding: 10px; 
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
 }
 li :hover {
     background-color: white;
@@ -159,6 +169,21 @@ footer {
     padding-right: 15%;
     margin-left: 150PX;
 }
+.bcktop {
+    position: relative;
+    width: fit-content;
+    height: 40px;
+    background-color: rgb(67, 64, 63);
+    border: 2px solid black;
+    padding: 1px;
+    top: -200px;
+    color: white;
+    
+}
+a {
+    color: white;
+}
+
 /*====================================Mobile================================================*/
 @media screen and (max-width: 420px) {
 .grid-container{
@@ -169,7 +194,10 @@ footer {
 } 
 .back{
     display: none; 
-}  
+} 
+.bcktop{
+    margin: auto;
+} 
 }
 
 /*====================================Tablet================================================*/
@@ -183,6 +211,9 @@ footer {
     .back{
         display: none;
 }
+.bcktop{
+    margin: auto;
+} 
 }
 
     /*====================================Laptop================================================*/
@@ -190,4 +221,10 @@ footer {
     .grid-container{
         grid-template-columns: 200px 100px; 
     }
+    .back{
+        display: none;
+}
+.bcktop{
+    margin: auto;
+} 
 }

@@ -7,8 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Resume</title>
   <link rel="stylesheet" href="SRC\CSS\stylesheet.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
   <header>
@@ -16,10 +19,15 @@
     <picture>
       <source srcset="SRC\images\head.jpg" media="(max-width: 425px)">
       <source srcset="SRC\images\shoulder.jpg" media="(max-width: 900px)">
-      <img src="SRC\images\full.jpg" alt="picture of Tumisang">
+      <img id="pic" src="SRC\images\full.jpg" alt="picture of Tumisang">
     </picture>
     <h1>Tumisang Nke</h1>
-    <p>A commited a software engineer open to inovative And new Ideas.Working for the the growth and development of the world as whole. <br>For the love of the code is the motto to carry </p>
+    <p>A commited a software engineer open to inovative And new Ideas.Working for the the growth and development of the
+      world as whole. <br>For the love of the code is the motto to carry </p>
+      <div class="git">
+      <a href="https://github.com/Tumii01"><i class="fa-brands fa-github"></i></a> 
+    </div>
+
   </header>
   <div class="navbar">
     <ul>
@@ -33,18 +41,22 @@
     <section class="flex-container">
       <div class="education">
         <h2 id="education">Education</h2>
-          <h3> Qualification 1</h3>
-          <p> A Matric certificate Obtained in 2019 as a science student.Being highly recommended as a good physics student. <br> Matric certificate <br>Obtained at: Bafokeng High School <br> Year:2019 </p>
-          <h3>Qualification 2</h3>
-          <p> Programming Fundamentals Obtained in 2022 as coding  student highly recommended as good software Developer. <br> Programming Fundamentals <br>Obtained at: Bafokeng Codelab <br> Year: 2022 </p>
-        </div>
-        <div class="projects">
-          <h2 id="projects">Marketing-Projects</h2>
-            <h3> Project 1</h3>
-            <p>A scratch game built with code from the start. Built using the under block elements and other scracth items <br> The game is brick buster game that was once found in the Blackberry Mobile.</p>
-            <h3>Project 2</h3>
-            <p>A Digital Resume made using two Programming langueges being CSS And html. Built Using html tags and CSS <br> The resume is Web based and can be accessed through a web Browser. </p>
-          </div>
+        <h3> Qualification 1</h3>
+        <p> A Matric certificate Obtained in 2019 as a science student.Being highly recommended as a good physics
+          student. <br> Matric certificate <br>Obtained at: Bafokeng High School <br> Year:2019 </p>
+        <h3>Qualification 2</h3>
+        <p> Programming Fundamentals Obtained in 2022 as coding student highly recommended as good software Developer.
+          <br> Programming Fundamentals <br>Obtained at: Bafokeng Codelab <br> Year: 2022 </p>
+      </div>
+      <div class="projects">
+        <h2 id="projects">Marketing-Projects</h2>
+        <h3> Project 1</h3>
+        <p>A scratch game built with code from the start. Built using the under block elements and other scracth items
+          <br> The game is brick buster game that was once found in the Blackberry Mobile.</p>
+        <h3>Project 2</h3>
+        <p>A Digital Resume made using two Programming langueges being CSS And html. Built Using html tags and CSS <br>
+          The resume is Web based and can be accessed through a web Browser. </p>
+      </div>
     </section>
 
     <section class="grid-container">
@@ -69,46 +81,50 @@
     </section>
   </article>
   <section class="footer">
-  <footer>
-    <div id="contact">
-    <h3>personal Contact details</h3>
-    <p>Phone number: 071 027 6754</p>
-    <p>Email: tumisangnke@gmail.com</p>
-    </div>
-    <div id="address">
-    <h3 >Home Address</h3>
-    <p>82 Ramakatswana Section <br> LUKA <br> Rustenburg <br> NORTH WEST</p>
-  </div>
-  <div id="about">
-   <h3 >About</h3>
-   <p>Contact Us <br> support</p>
-  </div>
-   <div class="formgroup">
-    <form action="https://formsubmit.co/tumisangnke@gmail.com" method="post">
-        <h4>Get in Touch</h4>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="User_name* required">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="User_email* required">
-        <label for="subjects">Subject:</label>
-        <select name="subjects" id="subjects" required>
+    <footer>
+      <div id="contact">
+        <h3>personal Contact details</h3>
+        <p>Phone number: 071 027 6754</p>
+        <p>Email: tumisangnke@gmail.com</p>
+      </div>
+      <div id="address">
+        <h3>Home Address</h3>
+        <p>82 Ramakatswana Section <br> LUKA <br> Rustenburg <br> NORTH WEST</p>
+      </div>
+      <div id="about">
+        <h3>About</h3>
+        <p>Contact Us <br> support</p>
+      </div>
+      <div class="formgroup">
+        <form action="https://formsubmit.co/tumisangnke@gmail.com" method="post">
+          <h4>Get in Touch</h4>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="User_name* required">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="User_email* required">
+          <label for="subjects">Subject:</label>
+          <select name="subjects" id="subjects" required>
             <option value="helpmehelpyou">Help me Help you</option>
             <option value="enjoyabetterexperience">Enjoy Better Experience</option>
             <option value="helpmeimprove">Help me Improve Product</option>
             <option value="other">Other</option>
-        </select>
-        <textarea name="user-message" id="msg" cols="20" rows="5">User feedback notes:</textarea>
-        <input type="submit">
-    </form>
+          </select>
+          <textarea name="user-message" id="msg" cols="20" rows="5">User feedback notes:</textarea>
+          <input type="submit">
+        </form>
 
 
-<i class="fa-brands fa-github"></i>
+       <a href="https://github.com/Tumii01"><i class="fa-brands fa-github"></i></a> 
 
 
-  <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/tumisang-nke-5a24b1268/"><i class="fa-brands fa-linkedin"></i></a>
 
-  <i class="fa-brands fa-slack"></i>
-</section>
-</footer>
+        <a href="https://app.slack.com/client/T1SFP028H/C1SDWPXK5/rimeto_profile/U04AHQ5LHMG"><i class="fa-brands fa-slack"></i></a>
+  </section>
+  <div class="bcktop">
+    <p><a href="#pic" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Back To
+        Top</a></p>
+    </footer>
 </body>
+
 </html>
