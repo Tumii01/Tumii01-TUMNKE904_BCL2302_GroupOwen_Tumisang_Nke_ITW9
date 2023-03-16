@@ -1,30 +1,37 @@
+/* Rotation Animation*/
 @keyframes rotate {
- to{
-    transform: rotate(360deg);
- }
+    to {
+        transform: rotate(360deg);
+    }
 }
-.back{
+
+.back {
     position: absolute;
-    box-shadow:0px 10px 0 #101820FF , -10px -10px 0 #fa9028;
+    box-shadow: 0px 10px 0 #101820FF, -10px -10px 0 #fa9028;
     animation: rotate 4s infinite linear;
     width: 180px;
     height: 180px;
-    border-radius:50%;
+    border-radius: 50%;
     left: 44%;
-    
+
 }
-body{
+
+/* Content Format*/
+body {
     background-color: #fa9028;
     box-sizing: border-box;
 }
+
 article {
     padding-left: 15%;
     margin-right: 10PX;
     padding-right: 15%;
     margin-left: 10PX;
 
-    
+
 }
+
+/* INTRODUCTION layout*/
 img {
     display: block;
     margin-left: auto;
@@ -33,9 +40,10 @@ img {
     width: 180px;
     height: 180px;
 }
+
 header {
     text-align: center;
-    color:beige;
+    color: beige;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(https://images.unsplash.com/photo-1585089858717-f4378c2031d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80);
@@ -46,47 +54,59 @@ header {
     background-position-y: 30%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.git{
+
+.git {
     margin-left: 300px;
 }
-h2{
+
+/* fonts*/
+h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/*Navbar Styling*/
 .navbar {
-margin-top: 8px;
-margin-left: -8px;
-margin-right: -8px;
-padding: 5x;
-overflow: hidden;
-background-color: #4D4C4C  ;
-border: 2px solid black;
+    margin-top: 8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 5x;
+    overflow: hidden;
+    background-color: #4D4C4C;
+    border: 2px solid black;
 }
-#nav{
-float: left;
-list-style-type: none;
+
+#nav {
+    float: left;
+    list-style-type: none;
 
 }
+
 li a {
-position: relative;
-display: block;
-color: black;
-text-decoration: none;
-margin-right: 200px;
-left: 200px;
-padding: 10px; 
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    position: relative;
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-right: 200px;
+    left: 200px;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 li :hover {
     background-color: white;
 }
-.flex-container{
+
+/* FLEXBOX*/
+.flex-container {
     display: flex;
     flex-direction: column;
 }
-.education{
+
+.education {
     flex: 1;
     width: fit-content;
     background-color: #101820FF;
@@ -94,7 +114,8 @@ li :hover {
     padding-left: 15px;
     color: #EFF5F9;
 }
-.projects{
+
+.projects {
     flex: 2;
     width: fit-content;
     background-color: #101820FF;
@@ -102,31 +123,38 @@ li :hover {
     padding-left: 15px;
     color: #EFF5F9;
 }
-.grid-container{
+
+/* CSS Grid*/
+.grid-container {
     display: grid;
-    grid-template-columns: 500px 500px; 
+    grid-template-columns: 500px 500px;
     padding: 10px;
     width: fit-content;
     color: #373737;
     width: 100%;
 
 }
-.grid-item{
-   
+
+.grid-item {
+
     width: fit-content;
     padding: 20px;
 
 }
 
-#address{
-position: relative;
-left: 300px;
-top: -110px; 
+/* FOOTER*/
+
+#address {
+    position: relative;
+    left: 300px;
+    top: -110px;
 }
+
 #about {
     position: relative;
-top: -110px;
+    top: -110px;
 }
+
 .formgroup {
     position: relative;
     height: 70px;
@@ -140,35 +168,40 @@ top: -110px;
     top: -200px;
     left: 80px;
 }
-.fa-github{
+
+.fa-github {
     position: relative;
-top: -250px;
-left: 200px;
-font-size: 80px;
+    top: -250px;
+    left: 200px;
+    font-size: 80px;
 }
-.fa-linkedin{
+
+.fa-linkedin {
     position: relative;
-font-size: 80px;
-top: -250px;
-left: 200px;
+    font-size: 80px;
+    top: -250px;
+    left: 200px;
 }
+
 .fa-slack {
-position: relative;
-font-size: 80px;
-top: -180px;
-left: 130px;
+    position: relative;
+    font-size: 80px;
+    top: -180px;
+    left: 130px;
 }
 
 footer {
     margin-top: 80px;
     width: fit-content;
 }
-.footer{
+
+.footer {
     padding-left: 15%;
     margin-right: 10PX;
     padding-right: 15%;
     margin-left: 150PX;
 }
+
 .bcktop {
     position: relative;
     width: fit-content;
@@ -178,53 +211,62 @@ footer {
     padding: 1px;
     top: -200px;
     color: white;
-    
+
 }
+
 a {
     color: white;
 }
 
 /*====================================Mobile================================================*/
 @media screen and (max-width: 420px) {
-.grid-container{
-    grid-template-columns: 200px 100px; 
-}
-.footer{
-    margin-left: 10px;
-} 
-.back{
-    display: none; 
-} 
-.bcktop{
-    margin: auto;
-} 
+    .grid-container {
+        grid-template-columns: 200px 100px;
+    }
+
+    .footer {
+        margin-left: 10px;
+    }
+
+    .back {
+        display: none;
+    }
+
+    .bcktop {
+        margin: auto;
+    }
 }
 
 /*====================================Tablet================================================*/
 @media screen and (max-width: 768px) {
-    .grid-container{
-        grid-template-columns: 200px 100px; 
+    .grid-container {
+        grid-template-columns: 200px 100px;
     }
-    .footer{
+
+    .footer {
         margin-left: -50px;
-    } 
-    .back{
+    }
+
+    .back {
         display: none;
-}
-.bcktop{
-    margin: auto;
-} 
+    }
+
+    .bcktop {
+        margin: auto;
+    }
 }
 
-    /*====================================Laptop================================================*/
+/*====================================Laptop================================================*/
 @media screen and (max-width: 1140px) {
-    .grid-container{
-        grid-template-columns: 200px 100px; 
+    .grid-container {
+        grid-template-columns: 200px 100px;
     }
-    .back{
+
+    .back {
         display: none;
-}
-.bcktop{
-    margin: auto;
-} 
+    }
+
+    .bcktop {
+        margin: auto;
+    }
 }
